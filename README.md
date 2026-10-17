@@ -1,12 +1,14 @@
 # cadence
-Group of apps — privacy policies hosted on GitHub Pages.
+Group of apps — home pages, privacy policies and terms, hosted on GitHub Pages.
 
-- Home: https://amalrajkurup.github.io/cadence.github.io/
-- Tutor Pay: https://amalrajkurup.github.io/cadence.github.io/tutorpay/
-- Tabister: https://amalrajkurup.github.io/cadence.github.io/tabister/
-- Terms: add `terms/` to an app URL, e.g. https://amalrajkurup.github.io/cadence.github.io/tabister/terms/
+Site: https://amalrajkurup.github.io/cadence.github.io/
+
+| App | Home | Privacy | Terms |
+|---|---|---|---|
+| Tutor Pay | [tutorpay/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/) | [tutorpay/privacy/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/privacy/) | [tutorpay/terms/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/terms/) |
+| Tabister | [tabister/](https://amalrajkurup.github.io/cadence.github.io/tabister/) | [tabister/privacy/](https://amalrajkurup.github.io/cadence.github.io/tabister/privacy/) | [tabister/terms/](https://amalrajkurup.github.io/cadence.github.io/tabister/terms/) |
 
 ## Adding an app
-1. Create a folder named after the app, e.g. `myapp/`, and put its privacy policy in `myapp/index.html` and its terms in `myapp/terms/index.html`.
-2. Add a card for it in the root `index.html` (copy the existing `<li>`).
-3. Commit and push. The policy URL is `https://amalrajkurup.github.io/cadence.github.io/myapp/`.
+1. Create a folder named after the app, e.g. `myapp/`, with `index.html` (home), `privacy/index.html` and `terms/index.html`.
+2. Add a card for it in the root `index.html` (copy an existing `<li>`).
+3. Commit and push.
