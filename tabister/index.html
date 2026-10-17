@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Tabister</title>
+<meta name="description" content="How the Tabister app collects, uses and protects your information.">
+<meta name="theme-color" content="#0B7A55">
+<style>
+:root{--bg:#F2F7F5;--card:#fff;--ink:#0E1C17;--mute:#5F726B;--line:#DFE9E5;--soft:#E9F3EF;--pri:#0B7A55}
+@media (prefers-color-scheme:dark){:root{--bg:#06110D;--card:#0E1D18;--ink:#E8F5F0;--mute:#8AA59B;--line:#1C332B;--soft:#14271F;--pri:#34D399}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+header{background:linear-gradient(145deg,#14B87F 0%,#0B7A55 55%,#06513A 100%);color:#fff;padding:40px 20px 34px}
+.wrap{max-width:820px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em;font-size:.95rem}
+.brand .mark{width:40px;height:40px;flex:none;border-radius:10px;background:#fff;color:#0B7A55;display:grid;place-items:center;font-size:1.3rem;letter-spacing:0}
+h1{font-size:2rem;line-height:1.15;letter-spacing:-.02em;margin:22px 0 6px}
+.updated{opacity:.8;font-size:.92rem;margin:0}
+main{padding:24px 20px 56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px 8px;margin-bottom:16px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:0 0 10px;color:var(--pri)}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:22px}li{margin:0 0 8px}
+code{font-size:.9em;background:var(--soft);padding:1px 6px;border-radius:6px}
+a{color:var(--pri)}
+.tbl{overflow-x:auto;margin:0 0 14px;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-weight:700}
+tr:last-child td{border-bottom:0}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><span class="mark" aria-hidden="true">T</span>TABISTER</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 17 October 2026</p>
+</div></header>
+
+<main class="wrap">
+<section class="card">
+  <h2>About this policy</h2>
+  <p>Tabister has no accounts and no ads. Your expenses live on your phone and are shared only with the people in your groups, end-to-end encrypted. This policy explains what the Tabister app for Android and iOS (app ID <code>app.tabister</code>) handles, why, and the choices you have.</p>
+  <p>Tabister is made by Cadence, an independent developer ("we", "us"). Questions about privacy: <a href="mailto:cadence.apps.support@gmail.com">cadence.apps.support@gmail.com</a>.</p>
+  <p>By using Tabister you agree to this policy.</p>
+</section>
+
+<section class="card">
+  <h2>Information the app handles</h2>
+  <p>Everything you enter is stored in a database on your phone. When you share a group or expense with friends, it is encrypted on your phone before it leaves, so we cannot read it.</p>
+  <div class="tbl"><table>
+    <tr><th>Information</th><th>Examples</th><th>Where it is kept</th><th>Who can read it</th></tr>
+    <tr><td>Your profile</td><td>The name you choose, and payment handles you add (such as UPI, PayPal, Venmo, Revolut or Cash App)</td><td>Your phone; encrypted copies on the sync relay</td><td>You and the people you share groups or expenses with</td></tr>
+    <tr><td>Friends you add</td><td>A friend's name, and an optional email or phone number</td><td>Your phone; encrypted copies on the sync relay</td><td>You and the members of groups you share with them</td></tr>
+    <tr><td>Expenses and groups</td><td>Descriptions, amounts, currencies, categories, dates, notes, splits, settlements, recurring expenses, comments and change history</td><td>Your phone; encrypted copies on the sync relay</td><td>Members of the group or the people in the expense</td></tr>
+    <tr><td>Receipt photos</td><td>A photo you take or pick, compressed on your phone</td><td>Your phone; encrypted copies on the sync relay</td><td>Members of the group or the people in the expense</td></tr>
+    <tr><td>Device keys</td><td>A signing key created when you install the app, and the keys for each group</td><td>Your phone only (secure storage)</td><td>Only your phone</td></tr>
+    <tr><td>Push token</td><td>A token that lets your phone get a "something changed" ping</td><td>The sync relay and Expo's push service</td><td>Us and Expo, to deliver pings; it contains no expense data</td></tr>
+  </table></div>
+  <p>We do not use analytics, advertising or tracking tools, and we do not sell or share your information for advertising.</p>
+</section>
+
+<section class="card">
+  <h2>How sync works</h2>
+  <ul>
+    <li><strong>End-to-end encrypted.</strong> Changes are encrypted on your phone with your group's key before they are sent. Our relay, which runs on Cloudflare, stores only encrypted data. It cannot see names, amounts, groups or who wrote what.</li>
+    <li><strong>Invite links.</strong> An invite link or QR code carries the key to a group. Anyone who has the link can join that group, so share it only with the people you mean to invite.</li>
+    <li><strong>Notifications.</strong> When something changes, the relay sends your phone a ping with no content, through Expo and Apple or Google's push services. Your phone then writes the notification text itself from the data it has decrypted.</li>
+    <li><strong>Network data.</strong> Like any internet service, Cloudflare and the push services see your device's IP address when it connects. They handle it under their own privacy policies.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Permissions and features on your phone</h2>
+  <ul>
+    <li><strong>Camera and photos.</strong> Used only when you choose to attach a receipt photo. The microphone is not used.</li>
+    <li><strong>Receipt scanning.</strong> Text on a receipt is read on your phone (Apple Vision or Google ML Kit). The image is not sent to us for scanning.</li>
+    <li><strong>Notifications.</strong> Used to tell you about changes in your groups. You can turn them off in the app or in your phone's settings.</li>
+    <li><strong>Import and export.</strong> Splitwise files you import are read on your phone and never uploaded. CSV exports are created on your phone and go only where you share them.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Payments</h2>
+  <p>Settle-up buttons open your payment app (for example UPI or PayPal) with the details filled in. Payments happen in that app. Tabister never sees or stores card or bank details. Tabister Pro purchases are not available yet; we will update this policy before they are.</p>
+</section>
+
+<section class="card">
+  <h2>Keeping and deleting your data</h2>
+  <ul>
+    <li><strong>On your phone.</strong> Uninstalling Tabister, or clearing its data, deletes everything stored on that phone, including your keys. There is no cloud backup, so this cannot be undone.</li>
+    <li><strong>On friends' phones.</strong> Expenses you shared stay on the phones of the people you shared them with, as they would in any shared ledger. You can delete an expense or comment you are part of, and the deletion syncs to the group.</li>
+    <li><strong>On the relay.</strong> Encrypted group data stays on the relay so members, including new ones, can sync. We cannot read it or tell whose it is. You can ask us to delete your push token at any time.</li>
+  </ul>
+  <p>Depending on where you live, you may have the right to see, correct or delete your information, or to complain to a data protection authority. Because we hold no readable personal data, most of these rights are best used in the app itself. Contact us if you need help.</p>
+</section>
+
+<section class="card">
+  <h2>Security, children and changes</h2>
+  <p><strong>Security.</strong> Shared data is encrypted with XChaCha20-Poly1305 and every change is signed by its author's device key. No method is perfectly secure, so keep your phone locked and your invite links private.</p>
+  <p><strong>Children.</strong> Tabister is not meant for children under 13, and we do not knowingly collect information from them.</p>
+  <p><strong>Where information is processed.</strong> Cloudflare, Expo, Apple and Google may process information in countries other than yours, under their own safeguards.</p>
+  <p><strong>Changes.</strong> We may update this policy. We will change the date at the top and, for important changes, tell you in the app.</p>
+  <p><strong>Contact.</strong> Cadence, <a href="mailto:cadence.apps.support@gmail.com">cadence.apps.support@gmail.com</a>.</p>
+</section>
+</main>
+<footer>© 2026 Tabister · <a href="../">All app policies</a></footer>
+</body>
+</html>
