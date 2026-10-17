@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cadence Apps · Privacy</title>
-<meta name="description" content="Privacy policies for apps made by Cadence.">
+<title>Cadence Apps · Privacy &amp; Terms</title>
+<meta name="description" content="Privacy policies and terms of service for apps made by Cadence.">
 <meta name="theme-color" content="#1F2A37">
 <style>
 :root{--bg:#F4F6F8;--card:#fff;--ink:#111827;--mute:#6B7280;--line:#E5E7EB;--pri:#1F2A37;--acc:#2563EB}
@@ -22,29 +22,34 @@ header p{color:var(--mute);margin:0}
 .app h2{font-size:1.1rem;margin:0}
 .app p{margin:2px 0 0;color:var(--mute);font-size:.92rem}
 .arrow{margin-left:auto;color:var(--mute);font-size:1.3rem}
+.links{margin:8px 0 0 84px;font-size:.9rem;color:var(--mute)}
+.links a{color:var(--acc);text-decoration:none}
+.links a:hover{text-decoration:underline}
 footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <h1>Privacy Policies</h1>
-  <p>Choose an app to read how it handles your information.</p>
+  <h1>Privacy &amp; Terms</h1>
+  <p>Privacy policies and terms of service for each app.</p>
 </header>
 
 <main>
 <ul class="apps">
-  <!-- To add an app: create a folder with an index.html (e.g. myapp/index.html) and copy this <li>. -->
+  <!-- To add an app: create myapp/index.html (privacy) and myapp/terms/index.html, then copy this <li>. -->
   <li><a class="app" href="tutorpay/">
     <span class="icon" style="background:linear-gradient(145deg,#2E8462,#0C3626)">T</span>
     <span><h2>Tutor Pay</h2><p>Android app for tracking tutoring fees and attendance</p></span>
     <span class="arrow" aria-hidden="true">›</span>
-  </a></li>
+  </a>
+    <p class="links"><a href="tutorpay/">Privacy Policy</a> · <a href="tutorpay/terms/">Terms of Service</a></p></li>
   <li><a class="app" href="tabister/">
     <span class="icon" style="background:linear-gradient(145deg,#14B87F,#06513A)">T</span>
     <span><h2>Tabister</h2><p>Android and iOS app for splitting expenses with friends</p></span>
     <span class="arrow" aria-hidden="true">›</span>
-  </a></li>
+  </a>
+    <p class="links"><a href="tabister/">Privacy Policy</a> · <a href="tabister/terms/">Terms of Service</a></p></li>
 </ul>
 </main>
 </div>
