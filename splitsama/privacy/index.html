@@ -37,7 +37,7 @@ footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
 <header><div class="wrap">
   <div class="brand"><img src="../assets/icon.png" alt="" aria-hidden="true">SPLITSAMA</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 27 October 2026</p>
+  <p class="updated">Last updated: 28 October 2026</p>
 </div></header>
 
 <main class="wrap">
@@ -62,7 +62,8 @@ footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
     <tr><td>Backup</td><td>An encrypted copy of your keys and data</td><td>Your own Google Drive, in a hidden app folder; or a backup file you save yourself</td><td>Only you (see "Backups")</td></tr>
     <tr><td>Subscription status</td><td>Whether SplitSama Pro is active, renewal dates, a purchase reference, and a random customer ID</td><td>Google Play or the App Store, and RevenueCat</td><td>Us and RevenueCat, to unlock Pro</td></tr>
     <tr><td>Crash reports</td><td>Error messages, app version, device model and operating system</td><td>Sentry</td><td>Us, to fix bugs</td></tr>
-    <tr><td>Push token</td><td>A token that lets your phone get a "something changed" ping</td><td>The sync relay and Expo's push service</td><td>Us and Expo, to deliver pings; it contains no expense data</td></tr>
+    <tr><td>Device push token</td><td>A token that lets your phone get a "something changed" ping</td><td>The sync relay and Expo's push service, until you turn notifications off or the token stops working</td><td>Us and Expo, to deliver pings; it contains no expense data</td></tr>
+    <tr><td>IP address</td><td>Your device's internet address when it connects</td><td>Processed by the sync relay when your phone connects; not stored with your data</td><td>Us, to deliver data and limit abuse</td></tr>
   </table></div>
   <p>We do not use advertising or tracking tools, we do not collect your location, and we do not sell or share your information for advertising.</p>
 </section>
@@ -71,6 +72,7 @@ footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
   <h2>How sync works</h2>
   <ul>
     <li><strong>End-to-end encrypted.</strong> Changes are encrypted on your phone before they are sent. Our relay, which runs on Cloudflare, stores only encrypted data. It cannot see names, amounts, groups or who wrote what.</li>
+    <li><strong>What the relay processes.</strong> As expected for a relay, it processes your device's IP address and device push token. The IP address is used to deliver data and for short, per-minute limits that stop floods of requests; the relay does not keep request logs or store IP addresses with your data. The push token is kept with the encrypted mailboxes you belong to so the relay can ping your phone, and is removed when you turn notifications off or the token stops working.</li>
     <li><strong>Invite links and QR codes.</strong> In an open group, anyone with the link or QR code can join. With "Approve new members" on, people can only ask to join until a member approves them.</li>
     <li><strong>Personal inboxes.</strong> Messages between people, such as non-group expenses, reminders and invitations, go to an encrypted inbox only the recipient can read. Inbox messages are deleted after 90 days.</li>
     <li><strong>Notifications.</strong> When something changes, the relay sends your phone a ping with no content, through Expo and Apple or Google's push services. Your phone writes the notification text itself.</li>
@@ -106,7 +108,7 @@ footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
   <div class="tbl"><table>
     <tr><th>Service</th><th>What it receives</th><th>Purpose</th></tr>
     <tr><td>Google (Sign-In, Drive, Firebase)</td><td>Your sign-in; your encrypted backup; requests for app settings</td><td>Sign-in, backups and feature settings</td></tr>
-    <tr><td>Cloudflare</td><td>Encrypted sync data and backup-key requests</td><td>Running the sync relay</td></tr>
+    <tr><td>Cloudflare</td><td>Encrypted sync data, backup-key requests, IP addresses and device push tokens</td><td>Running the sync relay</td></tr>
     <tr><td>Expo, Apple and Google push services</td><td>Push token and content-free pings</td><td>Notifications</td></tr>
     <tr><td>RevenueCat, Google Play, App Store</td><td>Random customer ID, purchase and subscription status</td><td>SplitSama Pro purchases</td></tr>
     <tr><td>Sentry</td><td>Crash and error reports, cleaned on your phone first</td><td>Fixing bugs</td></tr>
