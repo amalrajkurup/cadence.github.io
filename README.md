@@ -6,9 +6,9 @@ Site: https://amalrajkurup.github.io/cadence.github.io/
 | App | Home | Privacy | Terms |
 |---|---|---|---|
 | Tutor Pay | [tutorpay/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/) | [tutorpay/privacy/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/privacy/) | [tutorpay/terms/](https://amalrajkurup.github.io/cadence.github.io/tutorpay/terms/) |
-| SplitSama | [home](https://splitsama.github.io/) | [privacy](https://splitsama.github.io/privacy/) | [terms](https://splitsama.github.io/terms/) |
+| SplitSama | [home](https://splitsama.app/) | [privacy](https://splitsama.app/privacy/) | [terms](https://splitsama.app/terms/) |
 
-SplitSama lives in its own repo, [splitsama/splitsama.github.io](https://github.com/splitsama/splitsama.github.io), which also has its [account deletion page](https://splitsama.github.io/delete-account/).
+SplitSama lives in its own repo, [splitsama/splitsama.github.io](https://github.com/splitsama/splitsama.github.io), which also has its [account deletion page](https://splitsama.app/delete-account/).
 
 The `splitsama/` and `tabister/` folders here only forward old links to the new site.
 
